@@ -7,28 +7,39 @@ import HardSkill3 from "./Hardskill3";
 
 const CertificateHardSkill = () => {
   return (
-    <section className="relative w-screen h-screen flex items-center justify-center bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
-        <Canvas camera={{ position: [0, 0, 5] }}>
-        <ambientLight intensity={0.5} />
-        <StarField />
-      </Canvas>
-      {/* Container teks */}
-      <div className="absolute z-10 flex flex-col items-center gap-4 p-6 bg-opacity-50 rounded-lg sm:mt-40">
-          <h1>Certification Of Competence</h1>
-          <HardSkill1 />
-          <HardSkill2 />
-          <HardSkill3 />
-          <Link
-          to="/more-competence"
-          className="mt-4 text-violet-400 bg-transparent px-6 py-2 rounded-md relative text-lg font-semibold overflow-hidden group transition-all duration-300 focus:outline-none focus:ring-0 inline-block 
-          hover:text-violet-400 focus:text-violet-400" // Warna violet-400 dalam HEX
-        >
-          Read More
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-violet-400 opacity-0 group-hover:opacity-100 animate-lexus-sign" />
-        </Link>
+    <section className="relative w-screen min-h-screen overflow-hidden bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
+      <div className="absolute w-screen h-screen">
+  <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0 z-0">
+    <ambientLight intensity={0.5} />
+    <StarField />
+  </Canvas>
       </div>
-    </section>
+  
+
+  {/* Konten utama */}
+  <div className="relative z-10 w-full max-w-6xl mx-auto py-24 flex flex-col items-center gap-6 mt-40">
+    <h1 className="text-2xl font-bold text-center">Certification Of Competence</h1>
+
+    {/* Semua HardSkill dalam w-full */}
+    <div className="w-full space-y-4">
+      <HardSkill1 />
+      <HardSkill2 />
+      <HardSkill3 />
+    </div>
+
+    {/* Tombol read more */}
+    <Link
+      to="/more-competence"
+      className="text-violet-400 bg-transparent py-2 px-6 rounded-md relative text-lg font-semibold overflow-hidden group transition-all duration-300 focus:outline-none focus:ring-0 
+        hover:text-violet-400 focus:text-violet-400"
+    >
+      Read More
+      <span className="absolute left-0 bottom-0 w-full h-0.5 bg-violet-400 opacity-0 group-hover:opacity-100 animate-lexus-sign" />
+    </Link>
+  </div>
+</section>
+
   );
-}
+};
 
 export default CertificateHardSkill;

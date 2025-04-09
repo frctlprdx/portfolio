@@ -6,19 +6,27 @@ import HardSkill3 from "./Hardskill3";
 
 const Competence1 = () => {
   return (
-    <section className="relative w-screen h-screen flex items-center justify-center bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
-        <Canvas camera={{ position: [0, 0, 5] }}>
+    <section className="relative w-screen h-screen overflow-hidden flex items-center justify-center bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
+      
+      {/* Background bintang 3D */}
+      <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0 z-0">
         <ambientLight intensity={0.5} />
         <StarField />
       </Canvas>
-      {/* Container teks */}
-      <div className="absolute z-10 flex flex-col items-center gap-4 p-6 bg-opacity-50 rounded-lg mt-40">
-          <h1>Certification Of Competence</h1>
+
+      {/* Konten utama */}
+      <div className="absolute z-10 w-full max-w-6xl flex flex-col items-center gap-6 mt-40">
+        <h1 className="text-2xl font-bold text-center">Certification Of Competence</h1>
+        
+        {/* HardSkill Cards */}
+        <div className="w-full space-y-4">
           <HardSkill1 />
           <HardSkill2 />
           <HardSkill3 />
+        </div>
       </div>
     </section>
   );
 }
+
 export default Competence1;
