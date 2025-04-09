@@ -1,18 +1,26 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import anpr from "../assets/img/anpr.png";
+import fr from "../assets/img/fr.png";
+import textclass from "../assets/img/fraud.png";
+import hitech from "../assets/img/hitech.png";
+import hris from "../assets/img/hris.png";
+import notetaking from "../assets/img/notetaking.png";
+import catchquiz from "../assets/img/catch.png";
+import warungajib from "../assets/img/warungajib.png";
 
 const projects = {
   "Machine Learning": [
     {
       title: "Automatic Plate Number Recognition",
       description: "A model for Recognize Plate Number based on real dataset we got from Jakarta Roads. I use YOLO for recognize the vehicles, ESRGAN for super-resolution to fix the images, and easyOCR to read the plate",
-      image: "src/assets/img/anpr.png",
+      image: anpr,
       buttons: [{ text: "View Project on Github", link: "https://github.com/frctlprdx/Plate-Number-Recognition" }],
     },
     {
       title: "Face Detection and Recognition",
       description: "Detect and Recognize the image using public dataset that we train first then we recognized it using trained model. In this project I use mtcnn to detect the faces, ",
-      image: "src/assets/img/fr.png",
+      image: fr,
       buttons: [
         { text: "View Project on Github", link: "https://github.com/frctlprdx/Face-Detection" },
         { text: "Project Report", link: "https://drive.google.com/file/d/1zv6RenrPaG-RTCyp8POCSoQCn-jFHZTA/view?usp=drive_link" },
@@ -21,23 +29,23 @@ const projects = {
     {
       title: "Text Classification",
       description: "Classified text between fraud or not,this is my team project, we got the data from kaggle and our personal messages. We use SMOTE to oversample imbalance data and use CNN to train model to recognize between fraud or not.",
-      image: "src/assets/img/fraud.png",
+      image: textclass,
       buttons: [
         { text: "View Project on Github", link: "https://github.com/frctlprdx/CNN-Text-Classification/tree/main" },
       ],
     },
-    {
-      title: "ML Project 4",
-      description: "A NLP model to summarize articles automatically.",
-      image: "/images/ml4.jpg",
-      buttons: [{ text: "Preview", link: "https://example.com/ml4" }],
-    },
+    // {
+    //   title: "ML Project 4",
+    //   description: "A NLP model to summarize articles automatically.",
+    //   image: "/images/ml4.jpg",
+    //   buttons: [{ text: "Preview", link: "https://example.com/ml4" }],
+    // },
   ],
   "Web Development": [
     {
       title: "Hitech 2025",
       description: "Website with React.JS for registration to Hi-Technology 2025 event.",
-      image: "src/assets/img/hitech.png",
+      image: hitech,
       buttons: [
         { text: "Live Site", link: "https://hitech.hmtiudinus.org/" },
       ],
@@ -45,7 +53,7 @@ const projects = {
     {
       title: "Human Resources Information Systems",
       description: "A full-stack HRIS application using Laravel and easyUI",
-      image: "src/assets/img/hris.png",
+      image: hris,
       buttons: [
         { text: "GitHub", link: "https://github.com/user/web2" },
       ],
@@ -53,7 +61,7 @@ const projects = {
     {
       title: "Note Taking App",
       description: "Simple Note Taking App using laravel, mysql and tailwindcss",
-      image: "src/assets/img/notetaking.png",
+      image: notetaking,
       buttons: [
         { text: "GitHub", link: "https://github.com/frctlprdx/todolistlaravel" },
       ],
@@ -63,13 +71,13 @@ const projects = {
     {
       title: "Career Quiz",
       description: "Quiz App to help you find your career path, just answer the question from us and let us decide your path!. We use kotlin for the android version and firebase as a database.",
-      image: "src/assets/img/catch.png",
+      image:catchquiz,
       buttons: [{ text: "View Project", link: "https://github.com/frctlprdx/Psikotes-Quiz-Kotlin" }],
     },
     {
       title: "Warung Ajib",
       description: "Simple E-commerce apps with payment gateaway features using midtrans to help small business sells their goods. I use flutter for the mobile version, node.js for the backend, mysql and firebase for database.",
-      image: "src/assets/img/warungajib.png",
+      image: warungajib,
       buttons: [
         { text: "GitHub", link: "https://github.com/frctlprdx/Simple-Menu-Order" },
       ],
