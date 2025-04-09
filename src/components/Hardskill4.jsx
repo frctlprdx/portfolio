@@ -1,20 +1,55 @@
+import { useState } from 'react';
 import genai from '../assets/img/genai.jpg';
 
 const HardSkill4 = () => {
-    return (
-      <div className="w-screen max-w-6xl mx-auto bg-black text-white border-2 border-violet-500 rounded-2xl shadow-lg p-5 flex items-center gap-6 h-48">
+  const [showPopup, setShowPopup] = useState(false);
+
+  return (
+    <div className="w-screen max-w-6xl mx-auto bg-black text-white border-2 border-violet-500 rounded-2xl shadow-lg p-5 flex items-center gap-6 h-48 relative">
       <div className="flex-1">
-        <h2 className="text-xl font-bold">Complete Generative Al Course With Langchain and Huggingface from Udemy</h2>
-        <p className="mt-2 text-sm">In this course I learn about Generative AI, learn how to make chatbot with API From chatgpt, langhcain and huggingface.</p>
+        <h2 className="text-xl font-bold">
+          Complete Generative AI Course With Langchain and Huggingface from Udemy
+        </h2>
+
+        {/* Desktop Description */}
+        <p className="text-sm hidden sm:block">
+          In this course I learn about Generative AI, learn how to make chatbot with API from ChatGPT, Langchain, and Hugging Face.
+        </p>
+
+        {/* Mobile Button */}
+        <button
+          onClick={() => setShowPopup(true)}
+          className="sm:hidden text-violet-400 text-xs px-3 rounded transition-colors duration-200 bg-transparent hover:bg-violet-600 hover:text-black"
+        >
+          Show Description
+        </button>
       </div>
-      <img 
+
+      <img
         src={genai}
-        alt="Deskripsi Gambar" 
+        alt="Deskripsi Gambar"
         className="w-42 h-36 object-cover rounded-lg"
       />
-  </div>
-    );
-  }
-  
-  export default HardSkill4;
-  
+
+      {/* Popup for Mobile */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 px-4">
+          <div className="bg-white text-black p-4 rounded-xl max-w-sm w-full shadow-lg">
+            <h3 className="text-lg font-semibold mb-2">Description</h3>
+            <p className="text-sm">
+              In this course I learn about Generative AI, learn how to make chatbot with API from ChatGPT, Langchain, and Hugging Face.
+            </p>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="mt-4 text-violet-600 text-sm px-3 py-1 rounded hover:bg-violet-600 hover:text-white transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default HardSkill4;

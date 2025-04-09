@@ -13,7 +13,7 @@ const CertificateHardSkill = () => {
         <StarField />
       </Canvas>
       {/* Container teks */}
-      <div className="absolute z-10 flex flex-col items-center gap-4 p-6 bg-opacity-50 rounded-lg mt-40">
+      <div className="absolute z-10 flex flex-col items-center gap-4 p-6 bg-opacity-50 rounded-lg sm:mt-40">
           <h1>Certification Of Competence</h1>
           <HardSkill1 />
           <HardSkill2 />
