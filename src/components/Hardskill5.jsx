@@ -1,8 +1,10 @@
+import python from '../assets/img/python.jpg';
+
 const HardSkill5 = () => {
     return (
         <div className="w-screen max-w-6xl mx-auto bg-black text-white border-2 border-violet-500 rounded-2xl shadow-lg p-5 flex items-center gap-6 h-48">
         <img 
-          src="./assets/img/python.jpg" 
+          src={python}
           alt="Deskripsi Gambar" 
           className="w-42 h-36 object-cover rounded-lg"
         />

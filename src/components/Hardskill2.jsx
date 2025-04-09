@@ -1,3 +1,5 @@
+import img2 from '../assets/img/img2.jpg';
+
 const HardSkill2 = () => {
     return (
     <div className="w-screen max-w-6xl mx-auto bg-black text-white border-2 border-violet-500 rounded-2xl shadow-lg p-5 flex items-center gap-6 h-48">
@@ -7,7 +9,7 @@ const HardSkill2 = () => {
             Firebase, Core ML, and many more.</p>
         </div>
         <img 
-          src="./assets/img/img2.jpg" 
+          src={img2}
           alt="Deskripsi Gambar" 
           className="w-42 h-36 object-cover rounded-lg"
         />
