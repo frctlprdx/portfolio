@@ -7,7 +7,7 @@ const HardSkill2 = () => {
             Firebase, Core ML, and many more.</p>
         </div>
         <img 
-          src="../assets/img/img2.jpg" 
+          src="./assets/img/img2.jpg" 
           alt="Deskripsi Gambar" 
           className="w-42 h-36 object-cover rounded-lg"
         />

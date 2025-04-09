@@ -6,7 +6,7 @@ const HardSkill4 = () => {
         <p className="mt-2 text-sm">In this course I learn about Generative AI, learn how to make chatbot with API From chatgpt, langhcain and huggingface.</p>
       </div>
       <img 
-        src="../assets/img/genai.jpg" 
+        src="./assets/img/genai.jpg" 
         alt="Deskripsi Gambar" 
         className="w-42 h-36 object-cover rounded-lg"
       />
