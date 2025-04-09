@@ -82,6 +82,14 @@ const projects = {
         { text: "GitHub", link: "https://github.com/frctlprdx/Simple-Menu-Order" },
       ],
     },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "",
+    //   buttons: [
+    //     { text: "", link: "" },
+    //   ],
+    // },
   ],
 };
 
@@ -108,7 +116,7 @@ const Project = () => {
       : projects[activeCategory];
 
   return (
-    <div className="w-full px-6 py-24 relative mt-[850px] sm:mt-0">
+    <div className="w-full px-6 py-24 relative sm:mt-0">
       {/* Pilihan kategori */}
       <div className="relative z-10 flex justify-center items-center space-x-6 mb-8 text-violet-400 text-2xl font-semibold ">
         <button onClick={handlePrev} className="px-4 py-2 hover:text-violet-300 transition">

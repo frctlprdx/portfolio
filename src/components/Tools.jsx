@@ -31,29 +31,33 @@ const tools = [
 
 const Tools = () => {
   return (
-    <section className="relative w-screen h-screen flex flex-col items-center justify-start bg-gradient-to-b from-galaxyLight via-galaxyDark to-black text-white px-8 overflow-hidden">
-      {/* Background Bintang */}
-      <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0">
-        <ambientLight intensity={0.5} />
-        <StarField />
-      </Canvas>
+    <section className="relative w-full min-h-screen bg-gradient-to-b from-galaxyLight via-galaxyDark to-black text-white overflow-hidden px-4 sm:px-8 pt-20 pb-20 ">
+  {/* StarField Background */}
+  <div className="absolute h-screen w-full">
+  <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0 z-0">
+    <ambientLight intensity={0.5} />
+    <StarField />
+  </Canvas>
+  </div>
 
-      {/* Judul */}
-      <h1 className="absolute z-10 text-4xl font-bold mb-10 text-center top-20">Tools</h1>
+  {/* Konten utama tetap relative dan di atas */}
+  <div className="relative z-10 flex flex-col items-center justify-start w-full">
+    <h1 className="text-4xl font-bold mb-10 text-center">Tools</h1>
+    
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      {tools.map((tool, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center justify-center border-2 border-violet-500 rounded-xl p-4 w-36 h-36 bg-black bg-opacity-30 backdrop-blur"
+        >
+          {tool.icon}
+          <span className="text-sm font-medium">{tool.name}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Grid Tools */}
-      <div className="absolute z-10 grid grid-cols-6 gap-6 top-40">
-        {tools.map((tool, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center border-2 border-violet-500 rounded-xl p-4 w-36 h-36 bg-black bg-opacity-30 backdrop-blur"
-          >
-            {tool.icon}
-            <span className="text-sm font-medium">{tool.name}</span>
-          </div>
-        ))}
-      </div>
-    </section>
   );
 };
 
