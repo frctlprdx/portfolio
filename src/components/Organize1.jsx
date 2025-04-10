@@ -15,7 +15,7 @@ const Organize1 = () => {
       </div>
 
       {/* Container teks */}
-      <div className="relative h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
+      <div className="relative min-h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
       <h1 className="text-2xl font-bold text-center">Certification Of Organization</h1>
         <Organization1 />
         <Organization2 />

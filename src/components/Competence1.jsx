@@ -6,7 +6,7 @@ import HardSkill3 from "./Hardskill3";
 
 const Competence1 = () => {
   return (
-    <section className="relative w-screen h-screen overflow-hidden flex items-center justify-center bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
+    <section className="relative w-screen min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white">
       
       {/* Background bintang 3D */}
       <div className="absolute h-screen w-full">
@@ -18,7 +18,7 @@ const Competence1 = () => {
 
 
       {/* Konten utama */}
-      <div className="relative h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
+      <div className="relative min-h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
         <h1 className="text-2xl font-bold text-center">Certification Of Competence</h1>
         
         {/* HardSkill Cards */}

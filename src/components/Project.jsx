@@ -19,7 +19,7 @@ const projects = {
     },
     {
       title: "Face Detection and Recognition",
-      description: "Detect and Recognize the image using public dataset that we train first then we recognized it using trained model. In this project I use mtcnn to detect the faces, ",
+      description: "Recognize the image using public dataset. In this project I use MTCNN to detect the faces, Inception ResNet to embed the faces, and SVM to classify the faces.",
       image: fr,
       buttons: [
         { text: "View Project on Github", link: "https://github.com/frctlprdx/Face-Detection" },
@@ -52,15 +52,16 @@ const projects = {
     },
     {
       title: "Human Resources Information Systems",
-      description: "A full-stack HRIS application using Laravel and easyUI",
+      description: "Internship project at Sintech.co.id to migrate Human Resources Information System from native PHP to Laravel. I use Laravel, easyUI, and MySQL for this project.",
       image: hris,
       buttons: [
         { text: "GitHub", link: "https://github.com/user/web2" },
+        { text: "Sintech", link: "https://sintech.co.id/" },
       ],
     },
     {
       title: "Note Taking App",
-      description: "Simple Note Taking App using laravel, mysql and tailwindcss",
+      description: "Simple Note Taking App using Laravel, MySQL and tailwindcss with Alpine.JS",
       image: notetaking,
       buttons: [
         { text: "GitHub", link: "https://github.com/frctlprdx/todolistlaravel" },
@@ -70,13 +71,13 @@ const projects = {
   "Mobile App": [
     {
       title: "Career Quiz",
-      description: "Quiz App to help you find your career path, just answer the question from us and let us decide your path!. We use kotlin for the android version and firebase as a database.",
+      description: "Quiz App to help you find your career path, just answer the quick question let us decide the path. We use Kotlin for the Android version and Firebase as a database.",
       image:catchquiz,
       buttons: [{ text: "View Project", link: "https://github.com/frctlprdx/Psikotes-Quiz-Kotlin" }],
     },
     {
       title: "Warung Ajib",
-      description: "Simple E-commerce apps with payment gateaway features using midtrans to help small business sells their goods. I use flutter for the mobile version, node.js for the backend, mysql and firebase for database.",
+      description: "Simple E-commerce apps with payment gateaway features using Midtrans to help small business sells their goods. I use Flutter for the mobile version, Node.JS for the backend, MySQL and Firebase for database.",
       image: warungajib,
       buttons: [
         { text: "GitHub", link: "https://github.com/frctlprdx/Simple-Menu-Order" },
@@ -160,7 +161,7 @@ const Project = () => {
 
       {/* Tombol Show More */}
       <div className="flex justify-center mt-10">
-        {activeCategory === "Machine Learning" && !showAll && (
+        {/* {activeCategory === "Machine Learning" && !showAll && (
           <button
             onClick={() => navigate("/more-")}
             className="px-6 py-2 bg-violet-600 text-white rounded-md hover:bg-violet-700 transition"
@@ -185,7 +186,7 @@ const Project = () => {
           >
             Show More
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
