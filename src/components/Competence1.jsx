@@ -18,7 +18,7 @@ const Competence1 = () => {
 
 
       {/* Konten utama */}
-      <div className="relative h-screen z-10 w-full max-w-6xl flex flex-col items-center gap-6 pt-20">
+      <div className="relative h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
         <h1 className="text-2xl font-bold text-center">Certification Of Competence</h1>
         
         {/* HardSkill Cards */}

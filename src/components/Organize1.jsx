@@ -7,14 +7,16 @@ import Organization3 from "./Organization3";
 const Organize1 = () => {
   return (
     <section className="relative w-screen h-auto flex flex-col items-center justify-start bg-gradient-to-b from-black via-galaxyDark to-galaxyLight text-white px-8 overflow-hidden">
-      <Canvas className="absolute top-0 left-0 w-full h-full" camera={{ position: [0, 0, 5] }}>
+      <div className="absolute h-screen w-full">
+      <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0 z-0">
         <ambientLight intensity={0.5} />
         <StarField />
       </Canvas>
+      </div>
 
       {/* Container teks */}
-      <div className="relative z-10 flex flex-col items-center gap-4 p-6 bg-opacity-50 rounded-lg">
-      <h1>Certification Of Organization</h1>
+      <div className="relative h-screen z-10 max-w-6xl flex flex-col items-center gap-6 pt-20">
+      <h1 className="text-2xl font-bold text-center">Certification Of Organization</h1>
         <Organization1 />
         <Organization2 />
         <Organization3 />
