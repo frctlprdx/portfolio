@@ -7,7 +7,7 @@ const Organization2 = () => {
   return (
     <div className="w-screen max-w-6xl mx-auto bg-black text-white border-2 border-violet-500 rounded-2xl shadow-lg p-5 flex items-center gap-6 h-auto md:h-48 relative">
       <div className="flex-1">
-        <h2 className="text-xl font-bold">
+        <h2 className="text-[15px] sm:text-xl font-bold">
           Committee in ITC 2024
         </h2>
 
@@ -22,8 +22,8 @@ const Organization2 = () => {
         {/* Tombol untuk mobile */}
         <button
           onClick={() => setShowPopup(true)}
-          className="sm:hidden mt-2 text-violet-400 text-xs px-3 py-1 rounded transition-colors duration-200 bg-transparent hover:bg-violet-600 hover:text-black"
-        >
+          className="mt-1 px-2 py-1 text-xs text-violet-400 rounded bg-transparent hover:bg-violet-400 hover:text-black transition md:hidden"
+          >
           Show Description
         </button>
       </div>

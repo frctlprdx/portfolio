@@ -12,7 +12,7 @@ const HardSkill5 = () => {
         className="w-42 h-36 object-cover rounded-lg"
       />
       <div className="flex-1">
-        <h2 className="text-xl font-bold">
+        <h2 className="text-[15px] sm:text-xl font-bold">
           Learn Python Programming Masterclass from Udemy
         </h2>
 
@@ -24,8 +24,8 @@ const HardSkill5 = () => {
         {/* Mobile button */}
         <button
           onClick={() => setShowPopup(true)}
-          className="sm:hidden mt-2 text-violet-400 text-xs px-3 py-1 rounded transition-colors duration-200 bg-transparent hover:bg-violet-600 hover:text-black"
-        >
+          className="mt-1 px-2 py-1 text-xs text-violet-400 rounded bg-transparent hover:bg-violet-400 hover:text-black transition md:hidden"
+          >
           Description
         </button>
       </div>

@@ -13,7 +13,7 @@ const HardSkill1 = () => {
           className="w-42 h-36 object-cover rounded-lg"
         />
         <div className="flex-1">
-          <h2 className="text-xl font-bold">
+          <h2 className="text-[15px] sm:text-xl font-bold">
             Master Laravel 11 & PHP: From Beginner to Advanced from Udemy
           </h2>
 

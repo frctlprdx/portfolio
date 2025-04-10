@@ -15,7 +15,7 @@ const Organization3 = () => {
 
       {/* Konten */}
       <div className="flex-1">
-        <h2 className="text-xl font-bold">Committee in SEMNASTI 2024</h2>
+        <h2 className="text-[15px] sm:text-xl font-bold">Committee in SEMNASTI 2024</h2>
 
         {/* Deskripsi tampil langsung di desktop */}
         <p className="mt-2 text-sm hidden sm:block">
@@ -30,8 +30,8 @@ const Organization3 = () => {
         {/* Tombol show untuk mobile */}
         <button
           onClick={() => setShowPopup(true)}
-          className="sm:hidden mt-2 text-violet-400 text-xs px-3 py-1 rounded transition-colors duration-200 bg-transparent hover:bg-violet-600 hover:text-black"
-        >
+          className="mt-1 px-2 py-1 text-xs text-violet-400 rounded bg-transparent hover:bg-violet-400 hover:text-black transition md:hidden"
+          >
           Show Description
         </button>
       </div>

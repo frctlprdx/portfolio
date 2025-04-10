@@ -17,11 +17,11 @@ const CertificateHardSkill = () => {
   
 
   {/* Konten utama */}
-  <div className="relative z-10 w-full max-w-6xl mx-auto py-24 flex flex-col items-center gap-6 mt-40">
+  <div className="relative z-10  max-w-6xl mx-auto flex flex-col items-center gap-6 pt-20">
     <h1 className="text-2xl font-bold text-center">Certification Of Competence</h1>
 
     {/* Semua HardSkill dalam w-full */}
-    <div className="w-full space-y-4">
+    <div className=" space-y-4">
       <HardSkill1 />
       <HardSkill2 />
       <HardSkill3 />
