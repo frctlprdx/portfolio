@@ -25,15 +25,17 @@ const About = () => {
   };
 
   return (
-    <section className="relative w-screen h-screen flex flex-col items-center justify-center bg-gradient-to-b from-galaxyLight via-galaxyDark to-black text-white px-8 overflow-hidden">
+    <section className="relative w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-galaxyLight via-galaxyDark to-black text-white overflow-hidden">
       {/* Background Bintang */}
-      <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0">
+      <div className="absolute h-screen w-full">
+      <Canvas camera={{ position: [0, 0, 5] }} className="absolute inset-0 z-0">
         <ambientLight intensity={0.5} />
         <StarField />
       </Canvas>
+      </div>
 
       {/* Wrapper utama */}
-      <div className="absolute z-10 text-center top-1/4 w-full">
+      <div className="relative z-10 text-center top-1/4 w-full">
         <h1 className="text-7xl tracking-widest">Beyond The Code:</h1>
 
         {/* Carousel Container */}
