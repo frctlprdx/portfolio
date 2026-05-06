@@ -24,9 +24,9 @@ const AboutSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
       >
-        Hello, I'm Ivan Putra Pratama. A passionate programmer with a strong foundation in Full Stack Web Development and AI technologies.
-        I specialize in Python, React, Laravel, and Machine Learning to build scalable and efficient solutions. On progress learning Django
-        and FastAPI to expand my knowledge in the backend. Actively seeking for internship and job opportunities to expand my skills.
+        Hello, I'm Ivan Putra Pratama. A Fresh Graduates Software Engineer student with strong foundation in software development.
+        Have experience in developing software application using JavaScript framework such as Next.js, React.js and PHP Laravel.
+        currently expanding skill to mobile development especially iOS using swift programming language.Actively seeking for job opportunities to expand my skills.
       </motion.p>
     </motion.div>
   );

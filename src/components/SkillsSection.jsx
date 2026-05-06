@@ -9,10 +9,9 @@ const SkillsSection = ({ triggerAnimation }) => {
   }, [triggerAnimation]); // Dependensi dari parent
 
   const skills = [
-    { name: "Python (Machine Learning)", width: "83%" },
-    { name: "Python (Django)", width: "25%" },
-    { name: "PHP (Laravel)", width: "83%" },
-    { name: "Frontend (React)", width: "25%" },
+    { name: "Full Stack Development (Next.js, React.js, Laravel)", width: "83%" },
+    { name: "Machine Learning (python)", width: "70%" },
+    { name: "Mobile (iOS Development with Swift)", width: "70%" },
     { name: "Database (MySQL)", width: "83%" },
   ];
 

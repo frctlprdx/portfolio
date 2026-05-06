@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import anpr from "../assets/img/anpr.png";
-import fr from "../assets/img/fr.png";
+import jurnal from "../assets/img/jurnal.png";
 import textclass from "../assets/img/fraud.png";
 import hitech from "../assets/img/hitech.png";
 import hris from "../assets/img/hris.png";
-import notetaking from "../assets/img/notetaking.png";
+import gosmile from "../assets/img/gosmile.png";
 import catchquiz from "../assets/img/catch.png";
 import warungajib from "../assets/img/warungajib.png";
 
@@ -18,12 +18,13 @@ const projects = {
       buttons: [{ text: "View Project on Github", link: "https://github.com/frctlprdx/Plate-Number-Recognition" }],
     },
     {
-      title: "Face Detection and Recognition",
+      title: "Publication",
       description: "Recognize the image using public dataset. In this project I use MTCNN to detect the faces, Inception ResNet to embed the faces, and SVM to classify the faces.",
-      image: fr,
+      image: jurnal,
       buttons: [
         { text: "View Project on Github", link: "https://github.com/frctlprdx/Face-Detection" },
         { text: "Project Report", link: "https://drive.google.com/file/d/1zv6RenrPaG-RTCyp8POCSoQCn-jFHZTA/view?usp=drive_link" },
+        { text: "Paper", link: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/11016  " },
       ],
     },
     {
@@ -44,7 +45,7 @@ const projects = {
   "Web Development": [
     {
       title: "Hitech 2025",
-      description: "Website with React.JS for registration to Hi-Technology 2025 event.",
+      description: "Website using React.JS for registration to Hi-Technology 2025 event.",
       image: hitech,
       buttons: [
         { text: "Live Site", link: "https://hitech.hmtiudinus.org/" },
@@ -60,11 +61,12 @@ const projects = {
       ],
     },
     {
-      title: "Note Taking App",
-      description: "Simple Note Taking App using Laravel, MySQL and tailwindcss with Alpine.JS",
-      image: notetaking,
+      title: "Go-Smile Marketplace",
+      description: "Marketplace for Nogosaren Village to sell their dairy products",
+      image: gosmile,
       buttons: [
-        { text: "GitHub", link: "https://github.com/frctlprdx/todolistlaravel" },
+        { text: "GitHub", link: "https://github.com/frctlprdx/marketplace" },
+        { text: "Live Site", link: "https://gosmilenogosaren.hmtiudinus.org/" },
       ],
     },
   ],

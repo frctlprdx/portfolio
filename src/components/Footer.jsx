@@ -40,7 +40,7 @@ const Footer = () => {
   </a>
 </div>
 
-          <p className="text-sm mt-4">2025. Ivan Putra Pratama. All rights reserved.</p>
+          <p className="text-sm mt-4">2026. Ivan Putra Pratama. All rights reserved.</p>
         </div>
     </section>
     );
